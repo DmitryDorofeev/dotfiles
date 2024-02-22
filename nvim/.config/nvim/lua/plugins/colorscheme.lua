@@ -1,5 +1,18 @@
 return {
-  -- add gruvbox
+  { "Everblush/nvim", name = "everblush" },
+
+  { "sainnhe/everforest" },
+
+  { "shaunsingh/moonlight.nvim" },
+
+  { "glepnir/zephyr-nvim" },
+
+  { "cocopon/iceberg.vim" },
+
+  { "savq/melange-nvim" },
+
+  { "NLKNguyen/papercolor-theme" },
+
   { "ellisonleao/gruvbox.nvim" },
 
   { "rose-pine/neovim", name = "rose-pine" },
