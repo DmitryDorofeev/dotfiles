@@ -7,12 +7,12 @@ size = 17
 
 [font.normal]
 style = "Regular"
-family = "IntoneMono Nerd Font Mono"
+# family = "IntoneMono Nerd Font Mono"
 # family = "MonaspiceAr Nerd Font Mono"
 # family = "Iosevka Nerd Font Mono"
 # family = "MartianMono Nerd Font Mono"
 # family = "Mononoki Nerd Font Mono"
-# family = "CaskaydiaCove Nerd Font Mono"
+family = "CaskaydiaCove Nerd Font Mono"
 
 [window.padding]
 x = 7
