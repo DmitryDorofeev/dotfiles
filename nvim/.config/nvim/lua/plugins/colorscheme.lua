@@ -1,6 +1,28 @@
 return {
   { "Everblush/nvim", name = "everblush" },
 
+  {
+    "uloco/bluloco.nvim",
+    lazy = false,
+    priority = 1000,
+    dependencies = { "rktjmp/lush.nvim" },
+    config = function()
+      -- your optional config goes here, see below.
+    end,
+  },
+
+  { "shaunsingh/nord.nvim" },
+
+  { "mhartington/oceanic-next" },
+
+  {
+    "samharju/synthweave.nvim",
+  },
+
+  {
+    "ribru17/bamboo.nvim",
+  },
+
   { "sainnhe/everforest" },
 
   { "shaunsingh/moonlight.nvim" },
