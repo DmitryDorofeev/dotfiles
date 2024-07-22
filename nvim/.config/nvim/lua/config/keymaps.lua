@@ -3,13 +3,12 @@
 -- Add any additional keymaps here
 
 for _, key in pairs({
-  "<leader>wd", -- delete window, <C-W>c, now just quit
-  "<leader>ww", -- other window, <C-W>p, not necessary
-  "<leader>w-", -- duplicate split window <C-W>s
-  "<leader>w|", -- duplicate split window <C-W>v
-  "<leader>qq", -- quit all
+    "<leader>wd", -- delete window, <C-W>c, now just quit
+    "<leader>ww", -- other window, <C-W>p, not necessary
+    "<leader>w-", -- duplicate split window <C-W>s
+    "<leader>w|", -- duplicate split window <C-W>v
+    "<leader>qq", -- quit all
 }) do
-  vim.keymap.del("n", key)
 end
 
 vim.keymap.set("n", "<leader>q", "<cmd>qa<cr>", { desc = "Faster [Q]uit" })
