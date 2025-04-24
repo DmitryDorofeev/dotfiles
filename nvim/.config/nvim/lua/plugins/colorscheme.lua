@@ -37,7 +37,16 @@ return {
 
   { "ellisonleao/gruvbox.nvim" },
 
-  { "rose-pine/neovim", name = "rose-pine" },
+  {
+    "rose-pine/neovim",
+    name = "rose-pine",
+    opts = {
+      styles = {
+        transparency = false,
+        italic = false,
+      },
+    },
+  },
 
   { "navarasu/onedark.nvim", name = "onedark" },
 
@@ -48,6 +57,29 @@ return {
   { "oxfist/night-owl.nvim" },
 
   { "talha-akram/noctis.nvim" },
+
+  {
+    "scottmckendry/cyberdream.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      transparent = true,
+    },
+  },
+
+  { "sainnhe/gruvbox-material" },
+
+  { "craftzdog/solarized-osaka.nvim" },
+
+  { "maxmx03/fluoromachine.nvim" },
+
+  { "olivercederborg/poimandres.nvim" },
+
+  { "embark-theme/vim" },
+
+  { "ray-x/aurora" },
+
+  { "glepnir/zephyr-nvim" },
 
   {
     "folke/tokyonight.nvim",

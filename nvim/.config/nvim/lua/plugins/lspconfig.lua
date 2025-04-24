@@ -1,18 +1,30 @@
 local get_root_dir = function(fname)
-    local util = require("lspconfig.util")
-    return util.root_pattern("package.json", "tsconfig.json")(fname)
+  local util = require("lspconfig.util")
+  return util.root_pattern("package.json", "tsconfig.json")(fname)
 end
 
 return {
-    "neovim/nvim-lspconfig",
-    opts = {
-        servers = {
-            eslint = {
-                root_dir = get_root_dir,
-            },
-            tsserver = {
-                root_dir = get_root_dir,
-            },
-        },
+  "neovim/nvim-lspconfig",
+  opts = {
+    servers = {
+      eslint = {
+        root_dir = get_root_dir,
+      },
+      tsserver = {
+        root_dir = get_root_dir,
+      },
     },
+    setup = {
+      html = function(server, opts)
+        server.setup({
+          cmd = { "vscode-html-language-server", "--stdio" },
+          filetypes = { "html" },
+          init_options = {
+            configurationSection = { "html", "css", "javascript" },
+          },
+          root_dir = get_root_dir,
+        })
+      end,
+    },
+  },
 }
