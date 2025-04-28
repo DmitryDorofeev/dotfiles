@@ -42,4 +42,6 @@ if [ -f '/Users/dmitrydorofeev/vk-cloud-solutions/path.bash.inc' ]; then source 
 
 export TEMPL_EXPERIMENT=rawgo
 export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
-export JAVA_HOME="/opt/homebrew/opt/openjdk@17"
+export JAVA_HOME="/opt/homebrew/opt/openjdk@17"export PATH=~/.npm-global/bin:$PATH
+
+export PATH=~/.npm-global/bin:$PATH
