@@ -1,5 +1,7 @@
-theme = duckbones
+theme = nightfox
+font-family = VictorMono Nerd Font Mono
+font-size = 15
+font-thicken = true
 background-opacity = 0.9
 background-blur-radius = 10
-macos-titlebar-style = hidden
 keybind = global:cmd+grave_accent=toggle_quick_terminal

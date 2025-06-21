@@ -35,14 +35,14 @@ return {
 
   { "NLKNguyen/papercolor-theme" },
 
-  { "ellisonleao/gruvbox.nvim" },
+  { "ellisonleao/gruvbox.nvim", opts = { transparent_mode = true } },
 
   {
     "rose-pine/neovim",
     name = "rose-pine",
     opts = {
       styles = {
-        transparency = false,
+        transparency = true,
         italic = false,
       },
     },

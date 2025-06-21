@@ -8,8 +8,6 @@ fi
 
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
-
 plugins=(
   git
   fzf-zsh-plugin
@@ -29,9 +27,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="$PATH:$HOME/Dev/flutter/bin"
 export PATH="$PATH:$HOME/.pub-cache/bin"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 
 export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
@@ -45,3 +40,9 @@ export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
 export JAVA_HOME="/opt/homebrew/opt/openjdk@17"export PATH=~/.npm-global/bin:$PATH
 
 export PATH=~/.npm-global/bin:$PATH
+
+case "$TERM" in
+    xterm-color|*-256color|xterm-ghostty) color_prompt=yes;;
+esac
+
+eval "$(starship init zsh)"
