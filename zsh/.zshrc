@@ -28,8 +28,7 @@ export NVM_DIR="$HOME/.nvm"
 if [ -f '/Users/dmitrydorofeev/vk-cloud-solutions/path.bash.inc' ]; then source '/Users/dmitrydorofeev/vk-cloud-solutions/path.bash.inc'; fi
 
 export TEMPL_EXPERIMENT=rawgo
-export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
-export JAVA_HOME="/opt/homebrew/opt/openjdk@17"export PATH=~/.npm-global/bin:$PATH
+export PATH=~/.npm-global/bin:$PATH
 
 export PATH=~/.npm-global/bin:$PATH
 
@@ -38,3 +37,16 @@ case "$TERM" in
 esac
 
 eval "$(starship init zsh)"
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# pnpm
+export PNPM_HOME="/Users/dmitrydorofeev/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
