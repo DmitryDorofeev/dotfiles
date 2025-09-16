@@ -117,19 +117,11 @@
     },
     {
         "key": "ctrl+h",
-        "command": "workbench.action.focusPreviousGroup"
+        "command": "-editor.action.startFindReplaceAction"
     },
     {
         "key": "ctrl+j",
-        "command": "workbench.action.focusBelowGroup"
-    },
-    {
-        "key": "ctrl+k",
-        "command": "workbench.action.focusAboveGroup"
-    },
-    {
-        "key": "ctrl+l",
-        "command": "workbench.action.focusNextGroup"
+        "command": "-workbench.action.togglePanel"
     },
     {
         "key": "ctrl+k",
@@ -137,15 +129,53 @@
         "when": "textInputFocus"
     },
     {
-        "key": "ctrl+j",
-        "command": "-workbench.action.togglePanel"
-    },
-    {
-        "key": "ctrl+h",
-        "command": "-editor.action.startFindReplaceAction"
+        "key": "ctrl+k",
+        "command": "-workbench.action.terminal.clear",
+        "when": "terminalFocus"
     },
     {
         "key": "ctrl+l",
         "command": "-expandLineSelection"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-workbench.action.terminal.clear",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "-cursorLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "-cursorDown",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "-cursorUp",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-cursorRight",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.navigateDown"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.navigateUp"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.navigateRight"
     }
 ]
