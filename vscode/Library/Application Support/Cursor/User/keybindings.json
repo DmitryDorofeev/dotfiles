@@ -1,6 +1,24 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
     {
+        "key": "ctrl+d",
+        "command": "-workbench.action.debug.start"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-editor.action.addSelectionToNextFindMatch"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "editorScroll",
+        "when": "editorTextFocus",
+        "args": {
+            "to": "down",
+            "by": "page",
+            "value": 0.5
+        }
+    },
+    {
         "key": "ctrl+r",
         "command": "-workbench.action.tasks.reRunTask"
     },
@@ -103,6 +121,11 @@
         "when": "terminalFocus"
     },
     {
+        "command": "workbench.action.terminal.focusPrevious",
+        "key": "cmd+j",
+        "when": "terminalFocus"
+    },
+    {
         "command": "workbench.action.terminal.focusNext",
         "key": "cmd+k",
         "when": "terminalFocus"
@@ -114,6 +137,46 @@
     {
         "key": "cmd+i",
         "command": "composerMode.agent"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-workbench.action.debug.start"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-workbench.action.debug.run"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-workbench.action.debug.continue"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-workbench.action.debug.restart"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-workbench.view.debug"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-workbench.debug.action.toggleRepl"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-editor.action.addSelectionToNextFindMatch"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-workbench.action.debug.stepOver"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-workbench.action.debug.stepInto"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-workbench.action.debug.stepOut"
     },
     {
         "key": "ctrl+h",
@@ -177,5 +240,13 @@
     {
         "key": "ctrl+l",
         "command": "workbench.action.navigateRight"
-    }
+    },
+    {
+        "key": "cmd+d",
+        "command": "editor.action.addSelectionToNextFindMatch"
+    },
+    {
+        "key": "cmd+shift+d",
+        "command": "workbench.action.debug.start"
+    },
 ]

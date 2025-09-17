@@ -1,19 +1,19 @@
 {
-    "dart.flutterSdkPath": "/Users/dmitrydorofeev/Dev/flutter",
-    "workbench.colorTheme": "Aura Dracula Spirit (Soft)",
-    "editor.fontFamily": "Dank Mono, AnonymicePro Nerd Font Mono, UbuntuMono Nerd Font, JetBrains Mono, Monaco, Consolas, 'Courier New', monospace",
-    "terminal.integrated.fontFamily": "",
-    "window.nativeTabs": true,
-    "editor.formatOnSave": true,
-    "workbench.editor.showTabs": "none",
-    "files.autoSave": "onFocusChange",
-    "editor.fontSize": 15,
-    "extensions.experimental.affinity": {
-        "asvetliakov.vscode-neovim": 1
-    },
-    "editor.lineHeight": 2,
-    "editor.minimap.enabled": false,
-    "terminal.integrated.fontLigatures.enabled": true,
-    "custom-ui-style.font.sansSerif": "Dank Mono",
-    "workbench.activityBar.orientation": "vertical"
+  "dart.flutterSdkPath": "/Users/dmitrydorofeev/Dev/flutter",
+  "workbench.colorTheme": "Gruvbox Material Dark",
+  "editor.fontFamily": "Dank Mono, AnonymicePro Nerd Font Mono, UbuntuMono Nerd Font, JetBrains Mono, Monaco, Consolas, 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "",
+  "window.nativeTabs": true,
+  "editor.formatOnSave": true,
+  "workbench.editor.showTabs": "none",
+  "files.autoSave": "onFocusChange",
+  "editor.fontSize": 15,
+  "editor.lineHeight": 2,
+  "editor.minimap.enabled": false,
+  "terminal.integrated.fontLigatures.enabled": true,
+  "custom-ui-style.font.sansSerif": "Dank Mono",
+  "workbench.activityBar.orientation": "vertical",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  }
 }
