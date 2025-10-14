@@ -50,3 +50,4 @@ esac
 # pnpm end
 
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
