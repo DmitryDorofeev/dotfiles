@@ -14,4 +14,8 @@ return {
   { "embark-theme/vim" },
   { "sho-87/kanagawa-paper.nvim" },
   { "samharju/synthweave.nvim" },
+  { "cocopon/iceberg.vim" },
+  { "ayu-theme/ayu-vim" },
+  { "ellisonleao/gruvbox.nvim" },
+  { "akinsho/horizon.nvim" },
 }
