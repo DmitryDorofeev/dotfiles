@@ -1,11 +1,13 @@
-theme = GruvboxDarkHard
-# font-family = VictorMono Nerd Font Mono
+theme = Rose Pine
+font-family = VictorMono Nerd Font Mono
 # font-family = ZedMono Nerd Font Mono
-font-family = UbuntuMono Nerd Font Mono
-font-size = 15
+# font-family = UbuntuMono Nerd Font Mono
+font-size = 14
 font-thicken = true
 adjust-cell-height = 6%
 adjust-cursor-height = 5%
 background-opacity = 0.9
 background-blur-radius = 10
 keybind = global:cmd+grave_accent=toggle_quick_terminal
+
+keybind = super+r=reload_config
