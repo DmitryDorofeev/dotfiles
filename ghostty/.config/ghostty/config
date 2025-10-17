@@ -1,12 +1,15 @@
 theme = Rose Pine
-font-family = VictorMono Nerd Font Mono
+#font-family = VictorMono Nerd Font Mono
 # font-family = ZedMono Nerd Font Mono
+font-family = Dank Mono
 # font-family = UbuntuMono Nerd Font Mono
-font-size = 14
+font-size = 16
 font-thicken = true
-adjust-cell-height = 6%
-adjust-cursor-height = 5%
-background-opacity = 0.9
+
+adjust-cell-height = 80%
+adjust-cursor-height = 50%
+
+background-opacity = 0.8
 background-blur-radius = 10
 keybind = global:cmd+grave_accent=toggle_quick_terminal
 
