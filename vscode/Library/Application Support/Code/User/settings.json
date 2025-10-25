@@ -1,6 +1,6 @@
 {
     "dart.flutterSdkPath": "/Users/dmitrydorofeev/Dev/flutter",
-    "workbench.colorTheme": "Kanagawa Wave",
+    "workbench.colorTheme": "Serika",
     "workbench.activityBar.orientation": "vertical",
     "editor.fontFamily": "Dank Mono, AnonymicePro Nerd Font Mono, UbuntuMono Nerd Font, JetBrains Mono, Monaco, Consolas, 'Courier New', monospace",
     "terminal.integrated.fontFamily": "",
@@ -27,5 +27,6 @@
     },
     "[github-actions-workflow]": {
         "editor.defaultFormatter": "redhat.vscode-yaml"
-    }
+    },
+    "hediet.vscode-drawio.resizeImages": null
 }

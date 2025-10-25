@@ -1,14 +1,34 @@
-theme = Rose Pine
-#font-family = VictorMono Nerd Font Mono
+# theme = Everforest Dark Hard
+theme = Gruvbox Material Dark
+# theme = Terafox
+# theme = Spacedust
+#
+# font-family = VictorMono Nerd Font Mono
 # font-family = ZedMono Nerd Font Mono
-font-family = Dank Mono
+# font-family = Dank Mono
+# font-family = Berkeley Mono
+# font-family = MonoLisa
+# font-family = Cartograph CF
+# font-family = Input Mono
+font-family = Monaspace Neon NF
+# font-family = AnonymicePro Nerd Font
 # font-family = UbuntuMono Nerd Font Mono
-font-size = 16
+
+
+font-size = 15
 font-thicken = true
 
-adjust-cell-height = 80%
-adjust-cursor-height = 50%
+# adjust-cell-width = "-5%"
+adjust-cell-height = 50%
 
+# background-image = ~/Dev/wallpapers/leafy.png
+# background-image = ~/Dev/wallpapers/moon.jpg
+# background-image = ~/Dev/nordic-wallpapers/wallpapers/nord_valley.png
+# background-image = ~/Dev/nordic-wallpapers/dynamic-wallpapers/TokyoStreet/ign_TokyoStreet-2.png
+background-image = ~/Dev/nordic-wallpapers/dynamic-wallpapers/Firewatch2/ign_Firewatch2-1.png
+# background-image = ~/Dev/nordic-wallpapers/dynamic-wallpapers/ExternalHimitsuHouse/ign_ExternalHimitsuHouse-2.jpg
+background-image-fit = cover
+background-image-opacity = 0.07
 background-opacity = 0.8
 background-blur-radius = 10
 keybind = global:cmd+grave_accent=toggle_quick_terminal

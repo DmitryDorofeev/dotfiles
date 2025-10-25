@@ -55,10 +55,7 @@ return {
   local config = {
     evaluate_single = true,
     header = logo,
-    content_hooks = {
-      starter.gen_hook.adding_bullet(pad .. "░ ", false),
-      starter.gen_hook.aligning("center", "center"),
-    },
+    items = {}
   }
       return config
     end,

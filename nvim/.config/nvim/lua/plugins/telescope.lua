@@ -1,6 +1,18 @@
 return {
   "nvim-telescope/telescope.nvim",
-  dependencies = { "nvim-telescope/telescope-live-grep-args.nvim" },
+  dependencies = { "nvim-telescope/telescope-ui-select.nvim", "nvim-telescope/telescope-live-grep-args.nvim" },
+  pririty = 1000,
+  config = function()
+    local t = require("telescope")
+    t.setup({
+      extensions = { ["ui-select"] = require("telescope.themes").get_dropdown({}) },
+    })
+    t.load_extension("ui-select")
+
+    vim.ui.select = function(items, opts, on_choice)
+      require("telescope").extensions["ui-select"].select(items, opts, on_choice)
+    end
+  end,
   opts = function(_, opts)
     local lga = require("telescope").load_extension
     lga("live_grep_args")
