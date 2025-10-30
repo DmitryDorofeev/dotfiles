@@ -1,5 +1,6 @@
 # theme = Everforest Dark Hard
-theme = Gruvbox Material Dark
+# theme = Gruvbox Material Dark
+theme = Monokai Pro
 # theme = Terafox
 # theme = Spacedust
 #
@@ -10,12 +11,13 @@ theme = Gruvbox Material Dark
 # font-family = MonoLisa
 # font-family = Cartograph CF
 # font-family = Input Mono
-font-family = Monaspace Neon NF
+# font-family = Monaspace Neon NF
+font-family = PragmataPro Mono Liga
 # font-family = AnonymicePro Nerd Font
 # font-family = UbuntuMono Nerd Font Mono
 
 
-font-size = 15
+font-size = 16
 font-thicken = true
 
 # adjust-cell-width = "-5%"
