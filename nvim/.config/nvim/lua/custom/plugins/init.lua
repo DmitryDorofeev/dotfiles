@@ -1,7 +1,5 @@
--- You can add your own plugins here or in other files in this directory!
---  I promise not to create any merge conflicts in this directory :)
---
--- See the kickstart.nvim README for more information
+local publish_diagnostics = vim.lsp.handlers['textDocument/publishDiagnostics']
+
 return {
   {
     'christoomey/vim-tmux-navigator',
@@ -59,6 +57,15 @@ return {
             inlayHints = false,
           },
         },
+        handlers = {
+          ['textDocument/publishDiagnostics'] = function(err, result, ctx, config)
+            -- Skip diagnostics for generated Dart files
+            if result and result.uri and result.uri:match '%.g%.dart$' then
+              return
+            end
+            publish_diagnostics(err, result, ctx, config)
+          end,
+        },
       },
     },
   },
@@ -77,13 +84,16 @@ return {
       },
     },
     config = function()
-      local config = {
-        runner = 'gotestsum',
-        testify_enabled = true,
-      }
       require('neotest').setup {
         adapters = {
-          require 'neotest-golang'(config),
+          require 'neotest-golang' {
+            runner = 'go',
+            testify_enabled = true,
+            go_test_args = { '-v', '-count=1' },
+            env = {
+              PROJECT_ROOT = vim.fn.getcwd(),
+            },
+          },
         },
       }
     end,
